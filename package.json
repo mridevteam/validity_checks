@@ -4,7 +4,8 @@
   "description": "Tests the input for correct and reasonable conditions, such as isObject, isFunction etc...",
   "main": "./index.js",
   "scripts": {
-    "preversion": "npm run lint && npm run test",
+    "buildClient": "browserify index.js -t babelify --outfile ./dist/validityChecks.js -s __validityChecks",
+    "preversion": "npm run lint && npm run test && npm run buildClient",
     "lint": "./node_modules/jscs/bin/jscs src -x",
     "test": "./node_modules/mocha/bin/_mocha --full-trace --recursive ./src/test"
   },
@@ -22,6 +23,8 @@
     "url": "https://github.com/mridevteam/validity_checks/issues"
   },
   "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
     "chai": "^3.5.0",
     "chai-spies": "^0.6.0",
     "jscs": "^2.11.0",
