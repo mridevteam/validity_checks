@@ -1,0 +1,31 @@
+{
+  "name": "validity_checks",
+  "version": "1.0.0",
+  "description": "Tests the input for correct and reasonable conditions, such as isObject, isFunction etc...",
+  "main": "./index.js",
+  "scripts": {
+    "preversion": "npm run lint && npm run test",
+    "lint": "./node_modules/jscs/bin/jscs src -x",
+    "test": "NODE_ENV=local ./node_modules/mocha/bin/_mocha --full-trace --recursive",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MikeFielden@github.com/mridevteam/validity_checks.git"
+  },
+  "keywords": [
+    "validity",
+    "checks"
+  ],
+  "author": "MriDevTeam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mridevteam/validity_checks/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.6.0",
+    "jscs": "^2.11.0",
+    "mocha": "^2.5.3"
+  },
+  "homepage": "https://github.com/mridevteam/validity_checks#readme"
+}
