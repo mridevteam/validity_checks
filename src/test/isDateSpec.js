@@ -1,16 +1,16 @@
-"use strict";
+'use strict';
 
 const chai          = require('chai')
   , expect        = chai.expect
   , isDate = require('../isDate')
   ;
 
-describe('isDateSpec', function () {
+describe('isDateSpec', function() {
   let things = [
     {input: 'OMG', output: false}
     , {input: undefined, output: false}
     , {input: null, output: false}
-    , {input: function () { var x = 0;}, output: false}
+    , {input: function() { var x = 0;}, output: false}
     , {input: [], output: false}
     , {input: new Array, output: false}
     , {input: 'abc123', output: false}

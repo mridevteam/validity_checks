@@ -1,5 +1,5 @@
 'use strict';
- 
+
 const isFunction = require('./isFunction')
   ;
 

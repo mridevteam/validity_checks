@@ -1,17 +1,17 @@
-"use strict";
+'use strict';
 
 const chai          = require('chai')
   , expect        = chai.expect
   , isEmptyObject = require('../isEmptyObject')
   ;
 
-describe('isEmptyObjectSpec', function () {
+describe('isEmptyObjectSpec', function() {
   describe('should operate correctly', function() {
     var things = [
       {input: 'OMG', output: false}
       , {input: undefined, output: false}
       , {input: null, output: false}
-      , {input: function () { var x = 0;}, output: false}
+      , {input: function() { var x = 0;}, output: false}
       , {input: [], output: false}
       , {input: new Array, output: false}
       , {input: 'abc123', output: false}
