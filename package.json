@@ -11,13 +11,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://MikeFielden@github.com/mridevteam/validity_checks.git"
+    "url": "https://github.com/mridevteam/validity_checks.git"
   },
   "keywords": [
     "validity",
     "checks"
   ],
   "author": "MriDevTeam",
+  "contributors": [
+    {
+      "name": "Collin Estes",
+      "email": "collin.j.estes@gmail.com"
+    },
+    {
+      "name": "Mike Fielden",
+      "email": "fielden.mike@gmail.com"
+    },
+    {
+      "name": "Ryan Gill",
+      "email": "ryanjgill2@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mridevteam/validity_checks/issues"
@@ -29,6 +43,9 @@
     "chai-spies": "^0.6.0",
     "jscs": "^2.11.0",
     "mocha": "^2.5.3"
+  },
+  "engines": {
+    "node": "6.5"
   },
   "homepage": "https://github.com/mridevteam/validity_checks#readme"
 }
