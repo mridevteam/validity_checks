@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/mridevteam/validity_checks.svg?branch=master)](https://travis-ci.org/mridevteam/validity_checks)
+[![Coverage Status](https://coveralls.io/repos/github/mridevteam/validity_checks/badge.svg?branch=master)](https://coveralls.io/github/mridevteam/validity_checks?branch=master)
 
 # validity_checks
 Tests the input for correct and reasonable conditions, such as isObject, isFunction etc...
