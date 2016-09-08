@@ -14,7 +14,7 @@ module.exports = {
 },{"./src/checkCallbackStrict":2,"./src/isDate":3,"./src/isEmptyObject":4,"./src/isFunction":5,"./src/isObject":6,"./src/isString":7,"./src/requiredParameter":8}],2:[function(require,module,exports){
 'use strict';
 
-const isFunction = require('./isFunction');
+var isFunction = require('./isFunction');
 
 /**
  * Throws if the cb isnt passed or isnt a function
@@ -41,6 +41,8 @@ module.exports = function isDate(date) {
 };
 
 },{}],4:[function(require,module,exports){
+"use strict";
+
 /**
  * Checks to see if a passed in item is an empty
  *
@@ -60,6 +62,8 @@ function isEmptyObject(item) {
 module.exports = isEmptyObject;
 
 },{}],5:[function(require,module,exports){
+'use strict';
+
 /**
  * Returns false if the cb isnt passed or isnt a function
  *
@@ -70,6 +74,10 @@ module.exports = function checkCallback(fnc) {
 };
 
 },{}],6:[function(require,module,exports){
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
 /**
  * Checks to see if a passed in item is a pojo
  *
@@ -77,12 +85,14 @@ module.exports = function checkCallback(fnc) {
  * @returns {boolean} isObject - is this value a pojo
  */
 function isObject(item) {
-  return typeof item === 'object' && !Array.isArray(item) && item !== null;
+  return (typeof item === 'undefined' ? 'undefined' : _typeof(item)) === 'object' && !Array.isArray(item) && item !== null;
 }
 
 module.exports = isObject;
 
 },{}],7:[function(require,module,exports){
+'use strict';
+
 /**
  * Checks to see if a passed in item is of type string
  *
@@ -99,7 +109,7 @@ module.exports = isString;
 'use strict';
 
 function requiredParameter(name) {
-  throw new Error(`Missing parameter "${ name }"`);
+  throw new Error('Missing parameter "' + name + '"');
 }
 
 /**
