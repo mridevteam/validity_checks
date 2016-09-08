@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/mridevteam/validity_checks.svg?branch=master)](https://travis-ci.org/mridevteam/validity_checks)
-[![Coverage Status](https://coveralls.io/repos/github/mridevteam/validity_checks/badge.svg?branch=master)](https://coveralls.io/github/mridevteam/validity_checks?branch=master)
-
 # validity_checks
 Tests the input for correct and reasonable conditions, such as isObject, isFunction etc...
+
+[![Build Status](https://travis-ci.org/mridevteam/validity_checks.svg?branch=master)](https://travis-ci.org/mridevteam/validity_checks)
+[![Coverage Status](https://coveralls.io/repos/github/mridevteam/validity_checks/badge.svg?branch=master)](https://coveralls.io/github/mridevteam/validity_checks?branch=master)
+[![Dependency Status](https://david-dm.org/mridevteam/validity_checks.svg)](https://david-dm.org/mridevteam/validity_checks)
 
 ### This can be used on the server (nodejs) or the client
 The client version of this file can be found at [`/dist/validityChecks.js`](dist/validityChecks.js)
